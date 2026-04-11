@@ -1,0 +1,58 @@
+.statCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.statCard::before {
+  content: '';
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  opacity: 0.07;
+}
+.gold::before  { background: #f59e0b; }
+.green::before { background: #10b981; }
+.red::before   { background: #ef4444; }
+.blue::before  { background: #3b82f6; }
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+.statValue {
+  font-family: 'DM Mono', monospace;
+  font-size: 26px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.statSub {
+  font-size: 12px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.statIcon {
+  position: absolute;
+  top: 24px; right: 24px;
+  font-size: 26px;
+  opacity: 0.5;
+}
+.pill {
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.up   { background: rgba(16,185,129,0.15); color: #10b981; }
+.down { background: rgba(239,68,68,0.15);  color: #ef4444; }
+.warn { background: rgba(245,158,11,0.15); color: #f59e0b; }
