@@ -1,0 +1,13 @@
+{
+  "name": "blockchain-doc-verify",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Secure Document Verification System",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "dev-server": "cd server && npm run dev",
+    "dev-client": "cd client && npm start",
+    "start-server": "cd server && npm start"
+  },
+  "author": "",
+  "license": "MIT"
+}
